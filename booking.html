@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="HarrutI" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <title>Dine | Booking</title>
+  
+</head>
+<body>
+
+  <header id="header-booking">
+    <a href="index.html">
+      <img src="./images/logo.svg" alt="">
+    </a>
+  </header>
+
+ 
+  <main>
+    <div id="banner">
+      <div id="sec1-text">
+        <p id="sec1-title">Reservations</p>
+        <p id="sec1-descr">We can’t wait to host you. If you have any special requirements please feel free to 
+          call on the phone number below. We’ll be happy to accommodate you.</p>
+      </div>
+    </div>
+    <div id="form">
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder="Name">
+    </div>
+    
+    <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Email">
+        <div class="error-message" id="email-error"></div>
+    </div>
+    
+    <div class="form-group">
+        <div class="date-picker">
+            <label>Pick a date</label>
+            <div class="date-inputs">
+                <input type="text" class="date-input" placeholder="MM" maxlength="2">
+                <input type="text" class="date-input" placeholder="DD" maxlength="2">
+                <input type="text" class="date-input year-input" placeholder="YYYY" maxlength="4">
+            </div>
+        </div>
+        <div class="error-message" id="date-error"></div>
+    </div>
+    
+    <div class="form-group">
+        <div class="time-picker">
+            <label>Pick a time</label>
+            <div class="time-inputs">
+                <input type="text" class="date-input" placeholder="09" maxlength="2">
+                <input type="text" class="date-input" placeholder="00" maxlength="2">
+                <div class="time-section">
+                    <div class="am-pm-toggle" id="am-pm-toggle">
+                        <span id="am-pm-text">AM</span>
+                        <img src="./images/icons/icon-arrow.svg" alt="">
+                        <div class="am-pm-dropdown" id="am-pm-dropdown">
+                            <div class="dropdown-item selected" data-value="AM">AM</div>
+                            <div class="dropdown-item" data-value="PM">PM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="error-message" id="time-error"></div>
+    </div>
+    
+    <div class="form-group">
+        <div class="people-counter">
+            <div class="counter-btn decrease-btn"><img src="./images/icons/icon-minus.svg" alt=""></div>
+            <div class="counter-value">4 people</div>
+            <div class="counter-btn increase-btn"><img src="./images/icons/icon-plus.svg" alt=""></div>
+        </div>
+    </div>
+    
+    <button class="btn btn-black">MAKE RESERVATION</button>
+    </div>
+    <div id="sub-decoration">
+      <img src="./images/patterns/pattern-curve-bottom-right.svg" alt="">
+      <img src="./images/patterns/pattern-lines.svg" alt="">
+    </div>
+  </main>
+
+<footer>
+
+  <div id="footer-bottom">
+    <div>
+      <a href="index.html">
+        <img src="./images/logo.svg" alt="">
+      </a>
+    </div>
+    <div class="footer-bottom-info">
+      <p>Marthwaite, Sedbergh</p>
+      <p>Cumbria</p>
+      <p>+00 44 123 4567</p>
+    </div>
+    <div class="footer-bottom-info">
+      <p>Open Times</p>
+      <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+      <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+    </div>
+</footer>
+
+<script src="./app/booking.js"></script>
+</body>
+</html>
